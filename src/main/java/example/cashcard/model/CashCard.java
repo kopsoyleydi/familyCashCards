@@ -15,6 +15,8 @@ public class CashCard {
 
 	private Double amount;
 
+	private String owner;
+
 	public CashCard(long l, double v) {
 
 	}
@@ -26,6 +28,13 @@ public class CashCard {
 		this.id = id;
 		this.amount = amount;
 	}
+
+	public CashCard(long id, Double amount, String name) {
+		this.id = id;
+		this.amount = amount;
+		this.owner = name;
+	}
+
 	public long getId() {
 		return id;
 	}
